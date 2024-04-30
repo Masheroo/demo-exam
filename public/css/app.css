@@ -1,0 +1,32 @@
+@font-face {
+    font-family: AppFont;
+    src: url('/fonts/MyFont.ttf');
+}
+
+*{
+    font-family: AppFont;
+}
+
+header{
+    display: grid;
+    grid-template-areas: "logo links";
+    grid-template-columns: 2fr 4fr;
+    align-items: center;
+    width: 80%;
+    padding: 0 10%;
+}
+
+header .logo-container{
+    grid-area: logo;
+}
+
+header .links{
+    grid-area: links;
+    display: flex;
+    justify-content: space-around;
+}
+
+body .content{
+    width: 80%;
+    padding: 5% 10%;
+}
