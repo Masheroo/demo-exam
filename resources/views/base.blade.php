@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <title>{{ $page_title }}</title>
 </head>
 <body>
     @include('header')
 
-    <div class="content">
+    <div class="content w-100">
         @yield('content')
     </div>
+    
+    <script defer src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
