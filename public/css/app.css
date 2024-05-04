@@ -12,7 +12,7 @@ header{
     grid-template-areas: "logo links";
     grid-template-columns: 2fr 4fr;
     align-items: center;
-    width: 80%;
+    width: 100%;
     padding: 0 10%;
 }
 
@@ -29,4 +29,38 @@ header .links{
 body .content{
     width: 80%;
     padding: 5% 10%;
+}
+
+.catalog-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.catalog-card{
+    width: 90%;
+}
+
+.product-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.product-wrapper img{
+    width: 100%;
+}
+
+.product-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+    padding: 1em 0;
+}
+.product-row:first-of-type{
+    border: none;
+    margin: 2em 0;
+}
+
+.product-row:last-of-type{
+    margin-bottom: 2em;
 }

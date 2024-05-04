@@ -15,10 +15,17 @@ class Product extends Model
         'price',
         'country_creator',
         'release_date',
-        'model'
+        'model',
+        'count'
     ];
 
     protected $casts = [
         'created_at' => 'datetime',
     ];
+
+    public static function getAll()
+    {
+        // Product::all()
+        return self::all()->sortBy('created_at');
+    }
 }

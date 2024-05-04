@@ -15,5 +15,6 @@
     </div>
     
     <script defer src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/js/script.js"></script>
 </body>
 </html>
