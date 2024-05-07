@@ -64,3 +64,45 @@ body .content{
 .product-row:last-of-type{
     margin-bottom: 2em;
 }
+
+#slider{
+    width: 700px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+#slider .slider-line{
+    display: flex;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: .6s;
+}
+
+#slider .slider-line .slide{
+    width: 700px;
+    height: 300px;
+    position: relative;
+}
+
+#slider .slider-line .slide img{
+    width: 700px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#slider .slider-line .slide .body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-end;
+    padding-left: 3em;
+    font-size: 30px;
+    color: white;
+}

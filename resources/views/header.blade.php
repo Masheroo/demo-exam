@@ -6,5 +6,14 @@
     <div class="links">
         <a href="/">О нас</a>
         <a href="/catalog">Каталог</a>
+
+        @guest
+        <a href="/register">Регистрация</a>
+        <a href="/auth">Вход</a>
+        @endguest
+
+        @auth
+        <a href="/logout">Выйти</a>
+        @endauth
     </div>
 </header>

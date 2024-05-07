@@ -2,18 +2,18 @@
 
 @section('content')
 
- <div class="carousel slide mx-auto w-50" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="false">
-  <div class="carousel-inner">
-
+  @if(session()->has('message'))
+    <h2 style="color: green">{{ session('message') }}</h2>
+  @endif
+ <div id="slider">
+  <div class="slider-line">
     @foreach($products as $product)
-    <div class="carousel-item active">
-        <div class="card">
-            <img src="/images/logo.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">{{ $product->name . ' ' . $product->price }}</p>
-            </div>
-        </div>  
-    </div>
+      <div class="slide">
+          <img src="/images/logo.jpg" class="card-img-top" alt="...">
+          <div class="body">
+              <p class="text">{{ $product->name . ' ' . $product->price }}</p>
+          </div>
+      </div>  
     @endforeach
 
   </div>
